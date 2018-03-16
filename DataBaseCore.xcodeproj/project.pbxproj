@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		856019A21EA649B400D2D421 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856019A11EA649B400D2D421 /* AppDelegate.swift */; };
-		856019A41EA649B400D2D421 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856019A31EA649B400D2D421 /* ViewController.swift */; };
 		856019A71EA649B400D2D421 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856019A51EA649B400D2D421 /* Main.storyboard */; };
 		856019A91EA649B400D2D421 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 856019A81EA649B400D2D421 /* Assets.xcassets */; };
 		856019AC1EA649B400D2D421 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856019AA1EA649B400D2D421 /* LaunchScreen.storyboard */; };
+		856019B41EA649CA00D2D421 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856019B31EA649CA00D2D421 /* MainViewController.swift */; };
+		856019B61EA64A2000D2D421 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856019B51EA64A2000D2D421 /* EntryViewController.swift */; };
+		856019B91EA64A2D00D2D421 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 856019B81EA64A2D00D2D421 /* CoreData.framework */; };
+		856019BB1EA64A5A00D2D421 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856019BA1EA64A5A00D2D421 /* CoreData.swift */; };
+		856019C01EA64A9A00D2D421 /* Model.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 856019BF1EA64A9A00D2D421 /* Model.xcdatamodel */; };
+		856019C21EA64D1200D2D421 /* DisplayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856019C11EA64D1200D2D421 /* DisplayTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8560199E1EA649B400D2D421 /* DataBaseCore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataBaseCore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		856019A11EA649B400D2D421 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		856019A31EA649B400D2D421 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		856019A61EA649B400D2D421 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		856019A81EA649B400D2D421 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		856019AB1EA649B400D2D421 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		856019AD1EA649B400D2D421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		856019B31EA649CA00D2D421 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		856019B51EA64A2000D2D421 /* EntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		856019B81EA64A2D00D2D421 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		856019BA1EA64A5A00D2D421 /* CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+		856019BF1EA64A9A00D2D421 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		856019C11EA64D1200D2D421 /* DisplayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				856019B91EA64A2D00D2D421 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,7 @@
 			children = (
 				856019A01EA649B400D2D421 /* DataBaseCore */,
 				8560199F1EA649B400D2D421 /* Products */,
+				856019B71EA64A2D00D2D421 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +67,25 @@
 			isa = PBXGroup;
 			children = (
 				856019A11EA649B400D2D421 /* AppDelegate.swift */,
-				856019A31EA649B400D2D421 /* ViewController.swift */,
 				856019A51EA649B400D2D421 /* Main.storyboard */,
 				856019A81EA649B400D2D421 /* Assets.xcassets */,
 				856019AA1EA649B400D2D421 /* LaunchScreen.storyboard */,
 				856019AD1EA649B400D2D421 /* Info.plist */,
+				856019B31EA649CA00D2D421 /* MainViewController.swift */,
+				856019B51EA64A2000D2D421 /* EntryViewController.swift */,
+				856019BA1EA64A5A00D2D421 /* CoreData.swift */,
+				856019BF1EA64A9A00D2D421 /* Model.xcdatamodel */,
+				856019C11EA64D1200D2D421 /* DisplayTableViewCell.swift */,
 			);
 			path = DataBaseCore;
+			sourceTree = "<group>";
+		};
+		856019B71EA64A2D00D2D421 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				856019B81EA64A2D00D2D421 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +161,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				856019A41EA649B400D2D421 /* ViewController.swift in Sources */,
+				856019BB1EA64A5A00D2D421 /* CoreData.swift in Sources */,
+				856019C01EA64A9A00D2D421 /* Model.xcdatamodel in Sources */,
+				856019C21EA64D1200D2D421 /* DisplayTableViewCell.swift in Sources */,
 				856019A21EA649B400D2D421 /* AppDelegate.swift in Sources */,
+				856019B41EA649CA00D2D421 /* MainViewController.swift in Sources */,
+				856019B61EA64A2000D2D421 /* EntryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
